@@ -47,7 +47,7 @@ body {
   min-height: 98dvh;
   min-height: 98vh;
   text-rendering: optimizeSpeed;
-  background-color: rgba(4, 118, 248, 0.425);
+  background-color: rgb(8, 28, 51);
   font-family: var(--ubuntu) ,  'Courier New', Courier, monospace;
   
 }
