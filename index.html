@@ -29,7 +29,7 @@
     <meta property="og:updated_time" content="2025-08-20T20:08:45+01:00">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:site_name" content="iammel">
-    
+
     <meta name="twitter:site" content="https://iammel.co.uk">
     <meta property="og:url" content="https://iammel.co.uk">
 
@@ -41,7 +41,7 @@
     <meta name="twitter:title" content="iam Mel">
 
     <meta name="description" content="Iam Mel and I am Pilates instructor at beckenham junction ">
-    <meta property="twitter:description"  content="Iam Mel and I am Pilates instructor at beckenham junction">
+    <meta property="twitter:description" content="Iam Mel and I am Pilates instructor at beckenham junction">
     <meta property="og:description" content="Iam Mel and I am Pilates instructor at beckenham junction">
 
 
@@ -56,9 +56,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100..900&amp;display=swap"
+        rel="stylesheet">
 
-        <script type="application/ld+json">
+    <script type="application/ld+json">
           {
               "@context": "https://schema.org",
               "@graph": [{
@@ -127,6 +128,30 @@
     </nav>
 
     <h1 class="pos-center-abs">Iam Mel </h1>
+
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector(".burger");
+            const nav = document.querySelector(".nav-links");
+            const navLinks = document.querySelectorAll(".nav-links li");
+
+            burger.addEventListener("click", () => {
+                nav.classList.toggle("nav-active");
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 1s ease forwards ${index / 3}s`;
+                    }
+                });
+                burger.classList.toggle('toggle');
+
+            });
+
+        };
+        navSlide();
+    </script>
 
 </body>
 
