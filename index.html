@@ -2,15 +2,380 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>iamMel</title>
+
+
+    <meta charset="utf-8">
+    <meta property="og:locale" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="rating" content="general">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="robots" content="index,follow">
+    <meta name="twitter:creator" content="@chartataglance">
+    <meta name="author" content="Rama">
+    <meta name="copyright" content="">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <meta name="revisit-after" content="1 Days">
+    <meta http-equiv="refresh" content="">
+    <meta name="view-transition" content="same-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1  viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, maximum-scale=1  viewport-fit=cover">
+
+    <meta name="email" content="iammel.co.uk&lt;admin@iammel.co.uk&gt;">
+    <meta property="og:email" content="iammel.co.uk&lt;admin@iammel.co.uk&gt;">
+    <meta property="article:modified_time" content="2025-08-20T20:08:45+01:00">
+    <meta property="og:type" content="website">
+    <meta property="og:updated_time" content="2025-08-20T20:08:45+01:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="iammel">
+    .uk
+    <meta name="twitter:site" content="https://iammel.co.uk">
+    <meta property="og:url" content="https://iammel.co.uk">
+    <style>
+        * {
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+
+        }
+
+        /* Remove default margin */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        figure,
+        blockquote,
+        dl,
+        dd {
+            margin: 0;
+        }
+
+        /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+        ul[role="list"],
+        ol[role="list"] {
+            list-style: none;
+        }
+
+        /* Set core root defaults */
+        html:focus-within {
+            scroll-behavior: smooth;
+        }
+
+
+
+        img,
+        picture {
+            max-width: 100%;
+            display: block;
+        }
+
+
+        @media (prefers-reduced-motion: reduce) {
+            html:focus-within {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+    <style>
+        /* @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap"); */
+        /* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+        @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
+
+        :root {
+            --mauto: 0 auto;
+            --width: clamp(768px, 100vw, 2560px);
+            --heigh: clamp(50px, 2vw, 2vw);
+            --card-width: clamp(290px, 80vw, 614px);
+            --card-heigh: clamp(541px, 100vh, 819px);
+            --full-heigh: clamp(80vh, 90vh, 1440px);
+
+            --ubuntu: "Ubuntu", monospace;
+            --poppins: "poppins", sans-serif;
+            --lato: "lato", sans-serif;
+            --background: hsl(210, 73%, 13%);
+            --fsh1: clamp(1rem, 1.5vw, 1.5rem);
+            --fsp: clamp(0.8rem, 0.5vw, 1rem);
+            --hue: 220;
+            --sat: 78%;
+            --lit: 13%;
+        }
+
+        :root {
+            --clr1: hsl(0, 0%, 100%);
+            --clr2: hsl(63, 98%, 32%);
+            --clr3: hsl(174, 96%, 28%);
+            --clr4: hsl(216, 36%, 41%);
+            --clr5: rgb(180, 200, 200);
+            --clr6: hsl(190, 36%, 26%);
+            --clr7: hsl(220, 35%, 20%);
+            --clr8: hsl(220, 70%, 15%);
+
+            --bgclr: hsl(220, 70%, 15%);
+            --brclr: hsl(200, 52%, 55%);
+
+            --box-shadow: rgba(108, 108, 126, 0.1) 0px 4px 16px,
+                rgba(170, 170, 250, 0.1) 0px 8px 24px, rgba(170, 17, 26, 0.1) 0px 16px 56px;
+        }
+
+
+        body {
+            width: "*";
+            padding: 2px 2px 2px 2px;
+            margin: 0px auto;
+            min-height: 98dvh;
+            min-height: 98vh;
+            text-rendering: optimizeSpeed;
+            background-color: rgba(4, 118, 248, 0.425);
+            font-family: var(--ubuntu), 'Courier New', Courier, monospace;
+
+        }
+
+
+
+        #tmn {
+            margin-right: 20px;
+            font-size: 12px;
+        }
+
+
+        .logo h4 {
+            color: rgb(255, 255, 255);
+            font-weight: 800;
+            font-size: 1.5em;
+            text-shadow: 2px 2px 4px rgb(56, 23, 13);
+            letter-spacing: 2px;
+            padding: 10px;
+
+        }
+
+        .logo a {
+            text-decoration: none;
+        }
+
+        .burger {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .burger div {
+            width: 33px;
+            height: 5px;
+            background-color: rgb(198, 182, 211);
+            margin: 7px;
+            z-index: 23;
+        }
+
+        .nav-links {
+            position: absolute;
+            right: 0;
+            /* background-color: rgba(79, 63, 226, 0.432); */
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 1rem;
+            transform: translateY(-200%);
+            transition: transform 0.5s ease-in;
+            padding: 20px;
+            -webkit-box-shadow: inset 0.5px 0.5px 20.5px 2.5px #d77575;
+            -moz-box-shadow: inset 0.5px 0.5px 20.5px 2.5px #d77575;
+            box-shadow: inset 0.5px 0.5px 20.5px 4.5px rgba(63, 37, 156, 0.5);
+            z-index: 1;
+        }
+
+        .nav-links li {
+            border-radius: 100vw 100vw 100vw 100vw;
+            opacity: 0.5;
+            background-color: rgba(22, 6, 82, 1);
+            -webkit-box-shadow: inset 0.5px 0.5px 20.5px 2.5px #d77575;
+            -moz-box-shadow: inset 0.5px 0.5px 20.5px 2.5px #d77575;
+            box-shadow: inset 0.3px 0.5px 20.5px 4.5px rgba(87, 73, 138, 1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            /* Removes the bullet points */
+            padding: 0;
+            /* Optional: Removes default padding */
+            margin: 0;
+            /* Optional: Removes default margin */
+        }
+
+        .nav-links a {
+            color: rgb(177, 250, 255);
+            display: flex;
+            justify-content: center;
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            font-weight: bold;
+            padding: 20px;
+            text-decoration: none;
+            text-shadow: 1px 1px 5px rgb(235, 49, 49);
+
+
+        }
+
+
+
+        .nav-active {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+
+        @keyframes navLinkFade {
+            from {
+                opacity: 0;
+                transform: translateY(150px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0px);
+            }
+        }
+
+        .toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .toggle .line2 {
+            transform: rotate(180deg) translate(-0px, -0px);
+            opacity: 0;
+        }
+
+        .toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+
+
+
+
+
+
+        @media (min-width: 768px) {
+            .nav-links {
+                width: 35%;
+                background-color: rgba(52, 33, 215, 0.01);
+            }
+
+        }
+    </style>
+
+
+    <link rel="canonical" href="https://iammel.co.uk">
+
+    <meta property="og:title" content="பஞ்ச பட்சி ">
+    <title style="text-transform: capitalize;">பஞ்ச பட்சி </title>
+    <meta name="twitter:title" content="பஞ்ச பட்சி ">
+
+    <meta name="description" content="iammel.co.uk is Provide Timetable for to Predict Good time For Events">
+    <meta property="twitter:description"
+        content="iammel.co.uk is Provide Timetable for to Predict Good time For Events">
+    <meta property="og:description" content="iammel.co.uk is Provide Timetable for to Predict Good time For Events">
+
+
+    <meta property="og:image" content="src/pat/4.png">
+    <link rel="icon" type="image/icon" href="src/pat/4.png">
+    <link rel="shortcut icon" type="image/x-icon" href="src/pat/4.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="src/pat/4.png">
+    <meta name="keywords" content="  Panchapatchi.com
+  iammel.co.uk">
+
+    <script type="application/ld+json">
+          {
+              "@context": "https://schema.org",
+              "@graph": [{
+                  "@type": "WebSite",
+                  "@id": "https://iammel.co.uk#webpage",
+                  "url": "https://iammel.co.uk",
+                  "name": "iammel",
+.uk                 "description": "iammel.co.uk is Provide Timetable for to Predict Good time For Events",
+                  "potentialAction": [{
+                      "@type": "SearchAction",
+                      "target": "https://iammel.co.uk/Product?name={search_term_string}",
+                      "query-input": "required name=search_term_string"
+                  }],
+                  "inLanguage": "en-US"
+              }, {
+                  "@type": "ImageObject",
+                  "@id": "https://iammel.co.uk#primaryimage",
+                  "inLanguage": "en-US",
+                  "url": "src/pat/4.png",
+                  "width": 100,
+                  "height": 100
+              }, {
+                  "@type": "WebPage",
+                  "@id": "https://iammel.co.uk#webpage",
+                  "url": "https://iammel.co.uk",
+                  "name": "பஞ்ச பட்சி ",
+                  "isPartOf": {
+                      "@id": "https://iammel.co.uk#website"
+                  },
+                  "primaryImageOfPage": {
+                      "@id": "https://iammel.co.uk#primaryimage"
+                  },
+                  "datePublished": "2020-06-25T08:11:20+00:00",
+                  "dateModified": "2022-01-08T03:58:31+00:00",
+                  "inLanguage": "en-gb",
+                  "potentialAction": [{
+                      "@type": "ReadAction",
+                      "target": ["https://iammel.co.uk"]
+                  }]
+              }]
+          }
+      </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100..900&amp;display=swap"
+        rel="stylesheet">
+
+
+
+
+
 </head>
 
 <body>
- 
+
+    <nav>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="https://panchapakshi.com/?tab=Menu">Menu</a></li>
+
+        </ul>
+
+    </nav>
+
     <h1 class="pos-center-abs">Iam Mel </h1>
 
 </body>
+
 </html>
