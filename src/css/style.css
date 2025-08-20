@@ -50,7 +50,7 @@ body {
   text-rendering: optimizeSpeed;
   background-color: rgb(8, 28, 51);
   font-family: var(--ubuntu) ,  'Courier New', Courier, monospace;
-  background-image: url("/src/img/wp.webp");
+  background-image: url("../img/wp.webp");
   
 }
 
