@@ -178,6 +178,7 @@ nav ul {
 
 .iammel {
   font-size: 2rem;
+
 }
 
 
@@ -211,14 +212,17 @@ nav ul {
 }
 
 .box h3 {
-  color: #341f8f;
+  color: #ffffff;
   font-weight: 500;
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
 
 }
 
 .box h1 {
-  color: #3614cc;
+  font-size: 3rem;
+  color: #f3f3f3;
   font-weight: 700;
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
 
 }
 
