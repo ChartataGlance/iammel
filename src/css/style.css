@@ -182,14 +182,9 @@ nav ul {
 .box {
 
 
-  margin-top: 10vh;
+  margin-top: 5vh;
   height: 80vh;
   width: 80vw;
-
-  gap: 1rem;
-  transition: transform 0.5s ease-in;
-  /* position: absolute; top: 53%; left: 50%; transform: translate(-50%, -50%); */
-
   border-radius: 20px;
 
 
@@ -206,6 +201,7 @@ nav ul {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-size: 120%;
 
 
 }
