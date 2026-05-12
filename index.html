@@ -3,338 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Iam Mel | Pilates Instructor in Beckenham</title>
-
-  <meta name="description" content="Iam Mel is a welcoming Pilates instructor based near Beckenham Junction, offering calm, supportive classes for strength, balance and wellbeing." />
-  <meta name="author" content="Iam Mel" />
-  <meta name="robots" content="index, follow" />
-
-  <meta property="og:title" content="Iam Mel | Pilates Instructor" />
-  <meta property="og:description" content="Friendly Pilates classes near Beckenham Junction for strength, balance and wellbeing." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://iammel.co.uk" />
-  <meta property="og:image" content="https://iammel.co.uk/src/img/bcvic.png" />
-
-  <link rel="canonical" href="https://iammel.co.uk" />
-  <link rel="icon" href="/src/img/bcvic.png" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Noto Sans", Arial, sans-serif;
-      color: #2f2f2f;
-      background:
-        linear-gradient(rgba(255,255,255,0.82), rgba(255,255,255,0.88)),
-        url("/src/img/bcvic.png") center/cover no-repeat;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(10px);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    }
-
-    nav {
-      max-width: 1100px;
-      margin: auto;
-      padding: 18px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo a {
-      text-decoration: none;
-      color: #8d5b68;
-      font-size: 1.4rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 22px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #444;
-      font-weight: 500;
-      text-transform: capitalize;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      color: #b46b7e;
-    }
-
-    .burger {
-      display: none;
-      cursor: pointer;
-    }
-
-    .burger div {
-      width: 26px;
-      height: 3px;
-      background: #8d5b68;
-      margin: 5px;
-      transition: 0.3s;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 70px 20px;
-    }
-
-    .hero {
-      max-width: 780px;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.88);
-      padding: 56px 34px;
-      border-radius: 28px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
-    }
-
-    .eyebrow {
-      color: #b46b7e;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-      margin-bottom: 14px;
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 6vw, 4rem);
-      color: #5d3e46;
-      margin-bottom: 14px;
-    }
-
-    h2 {
-      font-size: clamp(1.2rem, 3vw, 1.7rem);
-      font-weight: 400;
-      color: #6f5c61;
-      margin-bottom: 24px;
-    }
-
-    .hero p {
-      max-width: 620px;
-      margin: 0 auto 32px;
-      line-height: 1.7;
-      font-size: 1.05rem;
-      color: #555;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      text-decoration: none;
-      padding: 13px 24px;
-      border-radius: 999px;
-      font-weight: 700;
-      transition: 0.3s ease;
-    }
-
-    .btn-primary {
-      background: #b46b7e;
-      color: #fff;
-    }
-
-    .btn-primary:hover {
-      background: #935466;
-    }
-
-    .btn-secondary {
-      border: 2px solid #b46b7e;
-      color: #8d5b68;
-      background: transparent;
-    }
-
-    .btn-secondary:hover {
-      background: #fff0f4;
-    }
-
-    .social {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-    }
-
-    .social a {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: #fff0f4;
-      color: #8d5b68;
-      transition: 0.3s ease;
-    }
-
-    .social a:hover {
-      transform: translateY(-3px);
-      background: #b46b7e;
-      color: #fff;
-    }
-
-    .social svg {
-      width: 20px;
-      height: 20px;
-      fill: currentColor;
-    }
-
-    footer {
-      text-align: center;
-      padding: 18px;
-      font-size: 0.85rem;
-      color: #6f5c61;
-      background: rgba(255,255,255,0.8);
-    }
-
-    footer a {
-      color: #8d5b68;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    @media screen and (max-width: 768px) {
-      .burger {
-        display: block;
-      }
-
-      .nav-links {
-        position: fixed;
-        right: 0;
-        top: 68px;
-        height: calc(100vh - 68px);
-        width: 70%;
-        background: rgba(255,255,255,0.96);
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        padding-top: 40px;
-        transform: translateX(100%);
-        transition: transform 0.4s ease;
-      }
-
-      .nav-links.nav-active {
-        transform: translateX(0);
-      }
-
-      .hero {
-        padding: 42px 24px;
-      }
-    }
-  </style>
+  <meta name="description" content="Iam Mel offers welcoming Pilates classes near Beckenham Junction for strength, flexibility, posture and wellbeing." />
+  <link rel="canonical" href="https://iammel.co.uk/" />
+  <link rel="stylesheet" href="src/css/style.css" />
 </head>
-
 <body>
-
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="./">Iam Mel</a>
-      </div>
-
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="index.html">Iam Mel</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
       <ul class="nav-links">
-        <li><a href="./">Home</a></li>
-        <li><a href="about">About Mel</a></li>
-        <li><a href="contact">Contact</a></li>
-        <li><a href="gallary">Gallery</a></li>
-        <li><a href="myblog">Blog</a></li>
-        <li><a href="store">Shop</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pilates.html">Pilates</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-
-      <div class="burger" aria-label="Open menu">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="eyebrow">Pilates in Beckenham</div>
-
-      <h1>Welcome, I’m Mel</h1>
-
-      <h2>Friendly Pilates classes for strength, balance and confidence.</h2>
-
-      <p>
-        Whether you are new to Pilates or returning to movement, my classes are calm,
-        supportive and designed to help you feel stronger, more flexible and more connected
-        with your body.
-      </p>
-
-      <div class="buttons">
-        <a href="contact" class="btn btn-primary">Book a Class</a>
-        <a href="about" class="btn btn-secondary">Meet Mel</a>
+      <div class="hero-content">
+        <p class="eyebrow">Pilates in Beckenham</p>
+        <h1>Move gently. Feel stronger. Breathe better.</h1>
+        <p class="hero-text">Friendly Pilates sessions with Mel, designed to support posture, flexibility, balance and everyday confidence.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="contact.html">Book a class</a>
+          <a class="btn secondary" href="pilates.html">View classes</a>
+        </div>
       </div>
+    </section>
 
-      <div class="social">
-        <a href="https://x.com/" aria-label="Follow on X">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9L357.2 48zM332.4 421.8h39.1L119.1 88H77.1l255.3 333.8z"/>
-          </svg>
-        </a>
+    <section class="section cards-section">
+      <div class="section-heading">
+        <p class="eyebrow">What you can expect</p>
+        <h2>Calm, welcoming and suitable for all levels</h2>
+      </div>
+      <div class="cards three">
+        <article class="card">
+          <h3>Beginner friendly</h3>
+          <p>Clear guidance and gentle progressions so you feel comfortable from your first class.</p>
+        </article>
+        <article class="card">
+          <h3>Strength & posture</h3>
+          <p>Focused movements to improve core strength, alignment and daily movement.</p>
+        </article>
+        <article class="card">
+          <h3>Mindful movement</h3>
+          <p>A supportive space to breathe, reset and reconnect with your body.</p>
+        </article>
+      </div>
+    </section>
 
-        <a href="https://wa.me/" aria-label="Message on WhatsApp">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-            <path d="M476.9 161.1C435 119.1 379.2 96 319.9 96 197.5 96 97.9 195.6 97.9 318c0 39.1 10.2 77.3 29.6 111L96 544l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1C442.2 540.1 544 440.5 544 318.1c0-59.3-25.2-115-67.1-157zM319.9 502.7c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6z"/>
-          </svg>
-        </a>
-
-        <a href="https://www.instagram.com/" aria-label="Follow on Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-            <path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7s51.2 115.1 114.7 115.3 115.1-51.2 115.3-114.7S383.8 205.2 320.3 205zm-.6 40.4c41.2-.2 74.7 33.1 74.9 74.3s-33.1 74.7-74.3 74.9-74.7-33.1-74.9-74.3 33.1-74.7 74.3-74.9z"/>
-          </svg>
-        </a>
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Meet Mel</p>
+        <h2>Your local Pilates instructor</h2>
+        <p>Mel teaches with warmth, patience and attention to detail. Classes are ideal for anyone wanting to build strength, improve mobility and feel more confident in movement.</p>
+        <a class="text-link" href="about.html">Read more about Mel →</a>
+      </div>
+      <div class="soft-box">
+        <h3>Ready to start?</h3>
+        <p>Send a message to ask about availability, class times or private sessions.</p>
+        <a class="btn primary" href="contact.html">Contact Mel</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    © <span id="year"></span> <a href="https://iammel.co.uk">iammel.co.uk</a>. All rights reserved.
+  <footer class="site-footer">
+    <p>© <span id="year"></span> iammel.co.uk. All rights reserved.</p>
   </footer>
 
-  <script>
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav-links");
-
-    burger.addEventListener("click", () => {
-      nav.classList.toggle("nav-active");
-    });
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
+  <script src="src/js/main.js"></script>
 </body>
 </html>

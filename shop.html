@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Iam Mel</title>
+  <meta name="description" content="Shop Pilates class passes, private sessions and wellness items from Iam Mel." />
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="index.html">Iam Mel</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pilates.html">Pilates</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero small">
+      <p class="eyebrow">Shop</p>
+      <h1>Class passes and Pilates essentials</h1>
+      <p>This is a simple static shop layout. You can connect payment later using Stripe, PayPal or another checkout provider.</p>
+    </section>
+
+    <section class="section cards-section">
+      <div class="cards three shop-grid">
+        <article class="card product-card">
+          <div class="product-image">Class Pass</div>
+          <h3>Single Class Pass</h3>
+          <p>Perfect for trying your first Pilates class with Mel.</p>
+          <p class="price">£12</p>
+          <button class="btn primary add-to-cart" data-name="Single Class Pass" data-price="12">Add to cart</button>
+        </article>
+        <article class="card product-card featured">
+          <div class="product-image">5 Classes</div>
+          <h3>Five Class Bundle</h3>
+          <p>A simple bundle for regular movement and better value.</p>
+          <p class="price">£55</p>
+          <button class="btn primary add-to-cart" data-name="Five Class Bundle" data-price="55">Add to cart</button>
+        </article>
+        <article class="card product-card">
+          <div class="product-image">Private</div>
+          <h3>Private Pilates Session</h3>
+          <p>One-to-one support tailored to your goals and comfort.</p>
+          <p class="price">£45</p>
+          <button class="btn primary add-to-cart" data-name="Private Pilates Session" data-price="45">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cart-box">
+      <h2>Your basket</h2>
+      <div id="cartItems">Your basket is empty.</div>
+      <p class="cart-total">Total: £<span id="cartTotal">0</span></p>
+      <a class="btn secondary" href="contact.html">Contact Mel to complete order</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> iammel.co.uk. All rights reserved.</p>
+  </footer>
+  <script src="src/js/main.js"></script>
+</body>
+</html>
