@@ -8,6 +8,34 @@ if (menuButton && navLinks) {
   });
 }
 
+const themeButton = document.querySelector('.theme-toggle');
+const themeIcon = document.querySelector('.theme-icon');
+const themeText = document.querySelector('.theme-text');
+const savedTheme = localStorage.getItem('iammel-theme');
+const preferredDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('iammel-theme', theme);
+
+  if (!themeButton) return;
+
+  const isDark = theme === 'dark';
+  themeButton.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+  themeButton.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+  if (themeIcon) themeIcon.textContent = isDark ? '☀' : '☾';
+  if (themeText) themeText.textContent = isDark ? 'Light' : 'Dark';
+}
+
+applyTheme(savedTheme || (preferredDark ? 'dark' : 'light'));
+
+if (themeButton) {
+  themeButton.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') || 'light';
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+}
+
 const year = document.getElementById('year');
 if (year) {
   year.textContent = new Date().getFullYear();
